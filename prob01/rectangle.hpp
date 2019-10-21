@@ -1,17 +1,16 @@
 #include <iostream>
 
-class Rectangle {
+class Rectangle{
 
 private:
   int length_;
   int width_;
 
 public:
-  void set_length(int length);
-  void set_width(int width);
-  int length();
-  int width();
-  int area();
+  void set_length(unsigned int length);
+  void set_width(unsigned int width);
+  unsigned int length();
+  unsigned int width();
+  unsigned int area();
+  Rectangle longest_rectangle(Rectangle rect1, Rectangle rect2);
 };
-
-Rectangle longest_retangle(Rectangle area_1, Rectangle area_2);
