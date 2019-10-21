@@ -17,7 +17,7 @@
   unsigned int Rectangle::area(){
     return length_ * width_;
   }
-  Rectangle Rectangle::longest_rectangle(Rectangle rect1, Rectangle rect2){
+  Rectangle longest_rectangle(Rectangle rect1, Rectangle rect2){
     if (rect1.area() > rect2.area()) {
       return rect1;
     } else {

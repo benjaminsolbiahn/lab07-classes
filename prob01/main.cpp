@@ -7,8 +7,10 @@ int main() {
   Rectangle rect2;
   std::cout << "Rectangle 1\nPlease enter the length: ";
   std::cin >> length1;
+  rect1.set_length(length1);
   std::cout << "Please enter the width: ";
   std::cin >> width1;
+  rect1.set_width(width1);
 
   // Create a Rectangle object named rect1. Assign it's length and width
   // according to the user's input
@@ -28,8 +30,10 @@ int main() {
   std::cout << "\n\nRectangle 2\n";
   std::cout << "Please enter the length: ";
   std::cin >> length2;
+  rect2.set_length(length2);
   std::cout << "Please enter the width: ";
   std::cin >> width2;
+  rect2.set_width(width2);
 
   // Create a rectangle object named rect2. Assign it's length and width
   // according to the user's input
@@ -52,7 +56,7 @@ int main() {
   Rectangle longest;
   // Call the longest_retangle function and assign the longest Rectangle
   // object it returns into the variable, longest.
-  longest =  longest.longest_rectangle(rect1, rect2);
+  longest =  longest_rectangle(rect1, rect2);
 
   std::cout << "The longest rectangle has a length of " << longest.length()
             << ", a width of " << longest.width() << ", and an area of "

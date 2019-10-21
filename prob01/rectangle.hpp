@@ -12,5 +12,6 @@ public:
   unsigned int length();
   unsigned int width();
   unsigned int area();
-  Rectangle longest_rectangle(Rectangle rect1, Rectangle rect2);
 };
+
+Rectangle longest_rectangle(Rectangle rect1, Rectangle rect2);
